@@ -13,3 +13,8 @@ Adaptive Traffic Signal Control using YOLO based vehicle detection.<br>
   <li><strong>Maintain road cycle:</strong> If a road already happens to have green light once, then it will not have another green light until the other three roads have their green light duration. So, after having a green light, the selection of road is done within the remaining roads</li>
 </ol>
 <p>Each of the road will follow a formula to calculate the duration of green light,</p>
+
+![Screenshot 2024-09-17 020043](https://github.com/user-attachments/assets/986b47e5-291d-4eef-9b5f-7a3a7f718753)
+
+<h5>Result:</h5>
+<p>Here are some example of the output</p>
