@@ -3,7 +3,12 @@ Adaptive Traffic Signal Control using YOLO based vehicle detection.<br>
 <h5>Introduction:</h5><br>
 &nbsp;&nbsp;&nbsp;&nbsp;This system proposes an adaptive traffic control system utilizing the YOLO object detection framework, to provide traffic signal lights at an at-grade four leg intersection with minimum human involvemnet. It uses the YOLOv8 model, trained on our primary dataset, to detect the vehicles on each road at the intersection. This captured information is further passed onto the intersection control algorithm, which then provides the traffic signal.
 <h5>Workflow:</h5>
-![FlowCharts4](https://github.com/user-attachments/assets/fbbd7c7f-c80e-46d9-a086-5a33192b99d1)
-
 ![FlowCharts4](https://github.com/user-attachments/assets/7f8a8cc9-e88c-4828-a00f-5bad5f4c8fa5)
 
+This code uses 4 videos of road to illustrate four camera live camera feed from each road of the intersection. Now from the four roads, it will take a frame from each. Then using the vehicle detection model it will detect and count the number of the vehicles of each road. Now, depending on the number of vehicles , it will provide a dynamic green light time for a road. A road having the green light will be following 3 rules,
+<ol>
+  <li><span>Prioritize emergency vehicles:</span>span> If there are any emergency vehicles in any of the road , then it will be prioritized to get the green light</li>
+  <li><span>Number of vehicles:</span>span> The road with greater number of vehicles will be selected to have green light</li>
+  <li><span>Maintain road cycle:</span> If a road already happens to have green light once, then it will not have another green light until the other three roads have their green light duration. So, after having a green light, the selection of road is done within the remaining roads</li>
+</ol>
+Each of the road will follow a formula to calculate the duration of green light,
