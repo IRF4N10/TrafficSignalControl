@@ -5,4 +5,5 @@ Adaptive Traffic Signal Control using YOLO based vehicle detection.<br>
 <h5>Workflow:</h5>
 ![FlowCharts4](https://github.com/user-attachments/assets/fbbd7c7f-c80e-46d9-a086-5a33192b99d1)
 
+![FlowCharts4](https://github.com/user-attachments/assets/7f8a8cc9-e88c-4828-a00f-5bad5f4c8fa5)
 
